@@ -24,9 +24,7 @@ export default {
   },
   methods: {
     pointCounter (point, index) {
-      if (this.points[index].score > 0 || point !== -1) {
-        this.points[index].score += point
-      }
+      this.points[index].score += point
     }
   },
   components: {
